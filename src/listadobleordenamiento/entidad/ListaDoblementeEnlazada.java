@@ -39,10 +39,10 @@ public class ListaDoblementeEnlazada {
         if (inicio == null) {
             System.out.println("La lista esta vacia.");
         } else {
-            String cadena = "";
+            String cadena = "null <->";
             NodoDoble actual = inicio;
             while (actual != null) {
-                cadena += actual.info + " -> ";
+                cadena += actual.info + " <-> ";
                 actual = actual.rLink;
             }
             System.out.println(cadena + "null");
@@ -53,10 +53,10 @@ public class ListaDoblementeEnlazada {
         if (fin == null) {
             System.out.println("La lista esta vacia.");
         } else {
-            String cadena = "";
+            String cadena = "null <->";
             NodoDoble actual = fin;
             while (actual != null) {
-                cadena += actual.info + " -> ";
+                cadena += actual.info + " <-> ";
                 actual = actual.lLink;
             }
             System.out.println(cadena + "null");
